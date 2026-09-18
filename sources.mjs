@@ -17,6 +17,7 @@ import { createReadStream, readFileSync, readdirSync } from 'node:fs'
 import { createInterface } from 'node:readline'
 import {
   fileDocuments,
+  harvestDocuments,
   gutenbergBody,
   leipzigLocators,
   leipzigSentences,
@@ -57,6 +58,31 @@ export const SOURCES = [
     documents: () => leipzig('deu-de_web_2021_1M'),
   },
   {
+    id: 'lzwebat',
+    what: 'Leipzig deu-at_web_2019_1M, Austrian web prose',
+    documents: () => leipzig('deu-at_web_2019_1M'),
+  },
+  {
+    id: 'lznews23',
+    what: 'Leipzig deu_news_2023_1M',
+    documents: () => leipzig('deu_news_2023_1M'),
+  },
+  {
+    id: 'lznews22',
+    what: 'Leipzig deu_news_2022_1M',
+    documents: () => leipzig('deu_news_2022_1M'),
+  },
+  {
+    id: 'lznews21',
+    what: 'Leipzig deu_news_2021_1M',
+    documents: () => leipzig('deu_news_2021_1M'),
+  },
+  {
+    id: 'lzcrawl18',
+    what: 'Leipzig deu_newscrawl-public_2018_1M',
+    documents: () => leipzig('deu_newscrawl-public_2018_1M'),
+  },
+  {
     id: 'tat',
     what: 'Tatoeba German sentences, contemporary and conversational',
     documents: () => tatoebaDocuments(`${CACHE}deu_sentences.tsv`),
@@ -71,6 +97,13 @@ export const SOURCES = [
         .map((file) => ({ locator: file.replace('.txt', ''), path: `${dir}/${file}` }))
       return fileDocuments(books, async (path) => gutenbergBody(readFileSync(path, 'utf8')))
     },
+  },
+  {
+    id: 'search',
+    what:
+      'Pages found by searching for the words themselves, fetched and verified. Attests but ' +
+      'does not rank: see `ranks` in the registry.',
+    documents: () => harvestDocuments(`${new URL('searched.tsv', import.meta.url).pathname}`),
   },
   {
     id: 'dewikisource',
