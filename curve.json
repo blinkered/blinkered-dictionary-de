@@ -2,10 +2,10 @@
   "language": "de",
   "built": "2026-09-21",
   "candidates": 36493,
-  "shipped": 35725,
+  "shipped": 35895,
   "conforms": true,
-  "families": 5,
-  "checkable": 4,
+  "families": 20,
+  "checkable": 19,
   "knee": 5,
   "steps": [
     {
@@ -38,10 +38,115 @@
     },
     {
       "families": 5,
+      "added": "heise.de",
+      "kept": 35753,
+      "share": 0.979722,
+      "gained": 44
+    },
+    {
+      "families": 6,
+      "added": "taz.de",
+      "kept": 35787,
+      "share": 0.980654,
+      "gained": 34
+    },
+    {
+      "families": 7,
+      "added": "perlentaucher.de",
+      "kept": 35812,
+      "share": 0.981339,
+      "gained": 25
+    },
+    {
+      "families": 8,
+      "added": "spiegel.de",
+      "kept": 35829,
+      "share": 0.981805,
+      "gained": 17
+    },
+    {
+      "families": 9,
       "added": "ebible",
-      "kept": 35725,
-      "share": 0.978955,
+      "kept": 35845,
+      "share": 0.982243,
       "gained": 16
+    },
+    {
+      "families": 10,
+      "added": "welt.de",
+      "kept": 35859,
+      "share": 0.982627,
+      "gained": 14
+    },
+    {
+      "families": 11,
+      "added": "literaturkritik.de",
+      "kept": 35871,
+      "share": 0.982956,
+      "gained": 12
+    },
+    {
+      "families": 12,
+      "added": "faz.net",
+      "kept": 35881,
+      "share": 0.98323,
+      "gained": 10
+    },
+    {
+      "families": 13,
+      "added": "br.de",
+      "kept": 35888,
+      "share": 0.983421,
+      "gained": 7
+    },
+    {
+      "families": 14,
+      "added": "ndr.de",
+      "kept": 35893,
+      "share": 0.983558,
+      "gained": 5
+    },
+    {
+      "families": 15,
+      "added": "n-tv.de",
+      "kept": 35894,
+      "share": 0.983586,
+      "gained": 1
+    },
+    {
+      "families": 16,
+      "added": "projekt-gutenberg.org",
+      "kept": 35895,
+      "share": 0.983613,
+      "gained": 1
+    },
+    {
+      "families": 17,
+      "added": "sueddeutsche.de",
+      "kept": 35895,
+      "share": 0.983613,
+      "gained": 0
+    },
+    {
+      "families": 18,
+      "added": "deutschestextarchiv.de",
+      "kept": 35895,
+      "share": 0.983613,
+      "gained": 0
+    },
+    {
+      "families": 19,
+      "added": "golem.de",
+      "kept": 35895,
+      "share": 0.983613,
+      "gained": 0
+    },
+    {
+      "families": 20,
+      "added": "literaturport.de",
+      "kept": 35895,
+      "share": 0.983613,
+      "gained": 0
     }
   ]
 }

@@ -8,9 +8,9 @@ the curve a careful builder would get, not the order this repository happens to 
 The first two families keep nothing, which is not padding — it is the shape of a rule that needs
 three independent sources.
 
-Candidates: 36,493. Shipped: 35,725.
+Candidates: 36,493. Shipped: 35,895.
 
-Of 5 families, **4 can be checked by fetching** —
+Of 20 families, **19 can be checked by fetching** —
 a stable identifier or a page we fetched ourselves. The other 1 are crawls
 somebody else made, whose locators record where they found the sentence; the document that holds
 it is their published corpus, not the web.
@@ -21,6 +21,21 @@ it is their published corpus, not the web.
 | 2 | `leipzig` | 0 | 0.0% | — |
 | 3 | `gutenberg` | 33,783 | 92.6% | +33,783 |
 | 4 | `tatoeba` | 35,709 | 97.9% | +1,926 |
-| 5 | `ebible` | 35,725 | 97.9% | +16 |
+| 5 | `heise.de` | 35,753 | 98.0% | +44 |
+| 6 | `taz.de` | 35,787 | 98.1% | +34 |
+| 7 | `perlentaucher.de` | 35,812 | 98.1% | +25 |
+| 8 | `spiegel.de` | 35,829 | 98.2% | +17 |
+| 9 | `ebible` | 35,845 | 98.2% | +16 |
+| 10 | `welt.de` | 35,859 | 98.3% | +14 |
+| 11 | `literaturkritik.de` | 35,871 | 98.3% | +12 |
+| 12 | `faz.net` | 35,881 | 98.3% | +10 |
+| 13 | `br.de` | 35,888 | 98.3% | +7 |
+| 14 | `ndr.de` | 35,893 | 98.4% | +5 |
+| 15 | `n-tv.de` | 35,894 | 98.4% | +1 |
+| 16 | `projekt-gutenberg.org` | 35,895 | 98.4% | +1 |
+| 17 | `sueddeutsche.de` | 35,895 | 98.4% | — |
+| 18 | `deutschestextarchiv.de` | 35,895 | 98.4% | — |
+| 19 | `golem.de` | 35,895 | 98.4% | — |
+| 20 | `literaturport.de` | 35,895 | 98.4% | — |
 
-**Diminishing returns from family 5** (`ebible`, +16), where a family first added less than a twentieth of what the best one did.
+**Diminishing returns from family 5** (`heise.de`, +44), where a family first added less than a twentieth of what the best one did.

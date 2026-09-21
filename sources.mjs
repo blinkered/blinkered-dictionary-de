@@ -68,18 +68,21 @@ export const SOURCES = [
   },
   ...LEIPZIG.map((pkg) => ({
     id: `lz:${pkg}`,
+    from: `https://downloads.wortschatz-leipzig.de/corpora/${pkg}.tar.gz`,
     what: `Leipzig ${pkg} — modern news and web, cited by the page each sentence came from`,
     needs: `${CACHE}${pkg}`,
     documents: () => leipzig(pkg),
   })),
   {
     id: 'tat',
+    from: 'https://downloads.tatoeba.org/exports/per_language/deu/deu_sentences.tsv.bz2',
     what: 'Tatoeba German — contemporary and conversational',
     needs: `${CACHE}deu_sentences.tsv`,
     documents: () => tatoebaDocuments(`${CACHE}deu_sentences.tsv`),
   },
   {
     id: 'gut',
+    from: 'https://www.gutenberg.org/cache/epub/feeds/pg_catalog.csv',
     what: 'Project Gutenberg German — published books, a register nothing else here reaches',
     needs: `${CACHE}gutenberg-de`,
     documents: () => {
@@ -92,6 +95,7 @@ export const SOURCES = [
   },
   {
     id: 'ebible:deuelo',
+    from: 'https://ebible.org/Scriptures/deuelo_vpl.zip',
     what: 'Elberfelder 1905 — a translation, a family nothing else here belongs to',
     needs: `${CACHE}ebible-de`,
     documents: () => verseDocuments(`${CACHE}ebible-de/deuelo_vpl.txt`),
@@ -109,6 +113,9 @@ export const SOURCES = [
  * carry the language. Across registers, and across the three countries that write it.
  */
 export const DOMAINS = [
+  // Books and scholarship, a register the news domains above never reach
+  'zeno.org', 'deutschestextarchiv.de', 'projekt-gutenberg.org', 'literaturport.de',
+  'perlentaucher.de', 'literaturkritik.de',
   'spiegel.de', 'zeit.de', 'faz.net', 'sueddeutsche.de', 'welt.de', 'taz.de',
   'tagesschau.de', 'ndr.de', 'wdr.de', 'br.de', 'heise.de', 'golem.de',
   'kicker.de', 'stern.de', 'focus.de', 'n-tv.de',
