@@ -54,7 +54,11 @@ process.stderr.write(`${LANGUAGE}: ${candidates.size} candidates\n`)
 // inside a decompressor, with nothing naming the file — three builds have died that way. Only
 // this language's sources, because German has no reason to stop over a Japanese download.
 for (const source of SOURCES) {
-  if (source.needs === undefined || !statSync(source.needs).isFile()) continue
+  // A collection unpacked from its download is not its download: Tatoeba's 47MB .tsv comes out
+  // of a 12MB .bz2, and comparing one against the other reports every complete file as a partial
+  // one. `from` stays the pointer back either way; `extracted` says the bytes differ.
+  if (source.needs === undefined || source.extracted === true) continue
+  if (!statSync(source.needs).isFile()) continue
   const checked = await checkDump(
     basename(source.needs),
     statSync(source.needs).size,

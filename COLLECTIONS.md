@@ -12,18 +12,18 @@ collection rather than reuse its record only has to put the file back where the 
 
 | collection | tokens | what it is | where it came from |
 | --- | ---: | --- | --- |
-| `wiki:de` | 1,425,172,675 | German Wikipedia — modern encyclopedic prose | [dewiki.xml.bz2](https://dumps.wikimedia.org/dewiki/latest/dewiki-latest-pages-articles.xml.bz2) |
-| `gut` | 112,007,779 | Project Gutenberg German — published books, a register nothing else here reaches | [gutenberg-de](https://www.gutenberg.org/cache/epub/feeds/pg_catalog.csv) |
-| `wikisource:de` | 63,960,055 | German Wikisource — same Wikimedia family, so it corroborates rather than counts | [dewikisource.xml.bz2](https://dumps.wikimedia.org/dewikisource/latest/dewikisource-latest-pages-articles.xml.bz2) |
-| `lz:deu_news_2024_1M` | 7,744,256 | Leipzig deu_news_2024_1M — modern news and web, cited by the page each sentence came from | [deu_news_2024_1M](https://downloads.wortschatz-leipzig.de/corpora/deu_news_2024_1M.tar.gz) |
-| `lz:deu_news_2023_1M` | 7,736,315 | Leipzig deu_news_2023_1M — modern news and web, cited by the page each sentence came from | [deu_news_2023_1M](https://downloads.wortschatz-leipzig.de/corpora/deu_news_2023_1M.tar.gz) |
-| `lz:deu_news_2022_1M` | 7,623,672 | Leipzig deu_news_2022_1M — modern news and web, cited by the page each sentence came from | [deu_news_2022_1M](https://downloads.wortschatz-leipzig.de/corpora/deu_news_2022_1M.tar.gz) |
-| `lz:deu_news_2021_1M` | 7,569,418 | Leipzig deu_news_2021_1M — modern news and web, cited by the page each sentence came from | [deu_news_2021_1M](https://downloads.wortschatz-leipzig.de/corpora/deu_news_2021_1M.tar.gz) |
-| `lz:deu_newscrawl-public_2018_1M` | 6,891,796 | Leipzig deu_newscrawl-public_2018_1M — modern news and web, cited by the page each sentence came from | [deu_newscrawl-public_2018_1M](https://downloads.wortschatz-leipzig.de/corpora/deu_newscrawl-public_2018_1M.tar.gz) |
-| `tat` | 5,556,764 | Tatoeba German — contemporary and conversational | [deu_sentences.tsv](https://downloads.tatoeba.org/exports/per_language/deu/deu_sentences.tsv.bz2) |
-| `lz:deu-at_web_2019_1M` | 4,351,714 | Leipzig deu-at_web_2019_1M — modern news and web, cited by the page each sentence came from | [deu-at_web_2019_1M](https://downloads.wortschatz-leipzig.de/corpora/deu-at_web_2019_1M.tar.gz) |
-| `lz:deu-de_web_2021_1M` | 1,130,831 | Leipzig deu-de_web_2021_1M — modern news and web, cited by the page each sentence came from | [deu-de_web_2021_1M](https://downloads.wortschatz-leipzig.de/corpora/deu-de_web_2021_1M.tar.gz) |
-| `ebible:deuelo` | 663,104 | Elberfelder 1905 — a translation, a family nothing else here belongs to | [ebible-de](https://ebible.org/Scriptures/deuelo_vpl.zip) |
+| `wiki:de` | 1,425,172,675 |  | — |
+| `gut` | 112,007,779 |  | — |
+| `wikisource:de` | 63,960,055 |  | — |
+| `lz:deu_news_2024_1M` | 7,744,256 |  | — |
+| `lz:deu_news_2023_1M` | 7,736,315 |  | — |
+| `lz:deu_news_2022_1M` | 7,623,672 |  | — |
+| `lz:deu_news_2021_1M` | 7,569,418 |  | — |
+| `lz:deu_newscrawl-public_2018_1M` | 6,891,796 |  | — |
+| `tat` | 5,556,764 |  | — |
+| `lz:deu-at_web_2019_1M` | 4,351,714 |  | — |
+| `lz:deu-de_web_2021_1M` | 1,130,831 |  | — |
+| `ebible:deuelo` | 663,104 |  | — |
 | `web:heise.de` | 361,927 |  | fetched from `heise.de`, recorded in `searched.tsv` |
 | `web:faz.net` | 330,015 |  | fetched from `faz.net`, recorded in `searched.tsv` |
 | `web:spiegel.de` | 272,234 |  | fetched from `spiegel.de`, recorded in `searched.tsv` |

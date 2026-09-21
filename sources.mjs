@@ -76,6 +76,8 @@ export const SOURCES = [
   {
     id: 'tat',
     from: 'https://downloads.tatoeba.org/exports/per_language/deu/deu_sentences.tsv.bz2',
+    // The cached file is the unpacked .tsv, not the .bz2 above.
+    extracted: true,
     what: 'Tatoeba German — contemporary and conversational',
     needs: `${CACHE}deu_sentences.tsv`,
     documents: () => tatoebaDocuments(`${CACHE}deu_sentences.tsv`),
