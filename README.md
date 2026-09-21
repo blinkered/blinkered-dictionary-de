@@ -8,12 +8,18 @@ the reasoning live there; what lives here is German.
 ## What is in this repository
 
 ```
-sources.mjs        which collections attest German, and why those six
-build.mjs          runs the scan and writes the three files below
-ATTESTATIONS.tsv   the evidence: every candidate, what saw it, and where
+sources.mjs        which collections attest German, and why those
+attestations/      the evidence: every candidate, what saw it, and where
 words.txt          what survived, in Blinkered's own format
 dropped.tsv        what did not, and how close it came
+SATURATION.md      what each family was worth, measured from the evidence
+searched.tsv       the harvest: which pages were fetched, and what they held
 ```
+
+The evidence is a **directory** rather than one file because German's runs to sixty megabytes
+and GitHub warns above fifty. Each shard is a complete, independently valid evidence file with
+its own header and digest; `readEvidence` puts them back together and refuses a repository that
+somehow holds both layouts. Nothing reads them by globbing.
 
 `.cache/` holds the downloaded collections and is not tracked. Everything here is regenerable
 with `pnpm build`.
@@ -24,18 +30,22 @@ Candidates come from Blinkered's current German list. The dictionaries that buil
 `en.wiktionary` German category, CC BY-SA — are demoted to **proposing words worth looking up**.
 Nothing they say survives into `words.txt` except as a question this build answered.
 
-Six collections answer it:
+Twelve collections answer it, in five families:
 
-| | register |
-| --- | --- |
-| German Wikipedia | modern encyclopedic prose |
-| Leipzig `deu_news_2024_1M` | modern news |
-| Leipzig `deu-de_web_2021_1M` | modern web prose |
-| Tatoeba German | contemporary, conversational |
-| Project Gutenberg German | published books |
-| German Wikisource | digitised older published texts |
+| family | collections | register |
+| --- | --- | --- |
+| Wikimedia | German Wikipedia, German Wikisource | encyclopedic prose; digitised older texts |
+| Leipzig | seven news and web packages, 2018 to 2024 | modern news and web prose |
+| Tatoeba | German sentences | contemporary, conversational |
+| Gutenberg | German books | published literature |
+| eBible | `deuelo` | scripture, a register of its own |
 
-## Why six, and why those
+Twelve collections and five families, and the second number is the one that counts. Two Wikimedia
+projects are one organization making one editorial decision about what German is; seven Leipzig
+packages are one crawler run seven times. The rule asks for three *independent* families, and
+counting collections instead would let a language pass on a single source consulted repeatedly.
+
+## Why those, and why five families
 
 **Register** is the variety of language that suits a setting: formal or casual, written or
 spoken, technical or everyday. Same language, different words. A collection of text is never a
@@ -59,6 +69,19 @@ nineteenth-century novels would have satisfied the rule again and changed nothin
 
 Register is not a nicety here. It is the difference between a defensible list and a broken one.
 
+## What each family was worth
+
+[`SATURATION.md`](SATURATION.md) has the curve, measured from the committed evidence. The short
+version: German's third family took it to 92.6% and its fifth added sixteen words. This is a
+language with more text behind it than the question needs.
+
+**The harvest is collected and not yet counted.** `searched.tsv` holds 1,990 pages fetched from
+ten German publishers, gathered to chase the last few hundred words. The build that produced the
+current evidence finished forty minutes before the harvest did, so those pages are recorded here
+and are not in `attestations/`. The next rebuild folds them in; at 97.9% the words at stake are
+few, and the honest thing is to say which files the numbers come from rather than to leave a
+reader to assume.
+
 ## Reading the result
 
 **The keep rate is not the check. The drop list is.** A build that keeps a plausible-looking 83%
@@ -72,9 +95,16 @@ not. Someone who speaks German should read it before this list ships.
 
 ```sh
 pnpm install
-pnpm build      # writes ATTESTATIONS.tsv, words.txt, dropped.tsv
-pnpm conform    # checks that words.txt says only what ATTESTATIONS.tsv supports
+pnpm build       # writes the evidence, words.txt, dropped.tsv
+pnpm conform     # checks that words.txt says only what the evidence supports
+pnpm saturation  # re-measures what each family was worth
+pnpm verify --sample 10      # fetches cited pages and checks they hold the word
+pnpm harvest 250 # fetches more pages from the publishers in DOMAINS
 ```
+
+A change here is not finished until the roll-up in `blinkered-attestation` is regenerated —
+`node scripts/languages.mjs` there. That is [the rule](../blinkered-attestation/README.md#the-rule-for-changing-a-language),
+and it exists because a summary nobody can trust is worse than no summary.
 
 Collections are expected under `.cache/raw/`. They are not downloaded automatically, because
 they total roughly 8GB and fetching that as a side effect of a build is rude.
