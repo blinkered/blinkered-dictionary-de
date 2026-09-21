@@ -46,6 +46,32 @@ const candidates = new Set(
     .filter(Boolean)
     .map((line) => line.split('\t')[0]),
 )
+// The candidate list is somebody else's dictionary, and it has to stay somebody else's. If
+// `blinkered` borrows its word lists back from these repositories, this path fills with our own
+// output: every candidate is a word already proved, coverage reads 100%, the drop list empties,
+// and nothing fails. That is the one fault this build cannot survive quietly, because every
+// number it reports would still look right. So it refuses instead of reporting.
+const SHIPPED = new URL('words.txt', import.meta.url).pathname
+if (existsSync(SHIPPED)) {
+  const shipped = new Set(
+    readFileSync(SHIPPED, 'utf8')
+      .split('\n')
+      .slice(1)
+      .filter(Boolean)
+      .map((line) => line.split('\t')[0]),
+  )
+  if (
+    shipped.size > 0 &&
+    shipped.size === candidates.size &&
+    [...shipped].every((word) => candidates.has(word))
+  ) {
+    throw new Error(
+      `the candidates at ${CANDIDATES} are this repository's own words.txt — ` +
+        'a list cannot be its own evidence. Point CANDIDATES at the borrowed list.',
+    )
+  }
+}
+
 const fold = alphabetFor(LANGUAGE).fold
 process.stderr.write(`${LANGUAGE}: ${candidates.size} candidates\n`)
 
@@ -54,11 +80,7 @@ process.stderr.write(`${LANGUAGE}: ${candidates.size} candidates\n`)
 // inside a decompressor, with nothing naming the file — three builds have died that way. Only
 // this language's sources, because German has no reason to stop over a Japanese download.
 for (const source of SOURCES) {
-  // A collection unpacked from its download is not its download: Tatoeba's 47MB .tsv comes out
-  // of a 12MB .bz2, and comparing one against the other reports every complete file as a partial
-  // one. `from` stays the pointer back either way; `extracted` says the bytes differ.
-  if (source.needs === undefined || source.extracted === true) continue
-  if (!statSync(source.needs).isFile()) continue
+  if (source.needs === undefined || !statSync(source.needs).isFile()) continue
   const checked = await checkDump(
     basename(source.needs),
     statSync(source.needs).size,
@@ -89,7 +111,7 @@ for (const source of SOURCES) {
   const started = Date.now()
   let result
   try {
-    result = await scan(source.id, source.documents(), candidates, fold)
+    result = await scan(source.id, source.documents(), candidates, fold, source.legible)
   } catch (cause) {
     // Which collection failed, and which file it was reading. A truncated dump fails deep
     // inside a decompressor with no clue as to whose it was, and hunting that down by hand has
