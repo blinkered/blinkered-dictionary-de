@@ -13,8 +13,8 @@ collection rather than reuse its record only has to put the file back where the 
 | collection | tokens | what it is | where it came from |
 | --- | ---: | --- | --- |
 | `wiki:de` | 1,425,172,675 |  | — |
+| `ia` | 159,785,461 | Internet Archive german books — literature, and the register a newspaper never reaches | [archive-de](https://archive.org/details/booksbylanguage_german) |
 | `gut` | 112,007,779 |  | — |
-| `ia` | 109,887,337 | Internet Archive german books — literature, and the register a newspaper never reaches | [archive-de](https://archive.org/details/booksbylanguage_german) |
 | `wikisource:de` | 63,960,055 |  | — |
 | `lz:deu_news_2024_1M` | 7,744,256 |  | — |
 | `lz:deu_news_2023_1M` | 7,736,315 |  | — |

@@ -15,7 +15,7 @@ BEKNACKTE	2	ia,wiki:de	1,30
 BEKNACKTEN	2	ia,wiki:de	2,4
 BIMSE	2	ia,wiki:de	1,5
 BLAMIERST	2	gut,tat	13,2
-BLUTLINIE	2	ia,wiki:de,wikisource:de	77,189,1
+BLUTLINIE	2	ia,wiki:de,wikisource:de	78,189,1
 BOXENSTOPP	2	lz:deu_news_2021_1M,lz:deu_news_2022_1M,lz:deu_news_2023_1M,lz:deu_news_2024_1M,lz:deu_newscrawl-public_2018_1M,lz:deu-at_web_2019_1M,wiki:de	15,14,13,21,4,3,1980
 CHEERLEADERIN	2	lz:deu_news_2022_1M,wiki:de	1,200
 COUGARS	2	lz:deu_news_2021_1M,lz:deu_news_2022_1M,lz:deu_news_2023_1M,lz:deu_newscrawl-public_2018_1M,wiki:de	2,1,1,6,1117
@@ -29,11 +29,11 @@ DUSCHST	2	ia,tat	3,5
 EISENWARENLADEN	2	ia,wiki:de	2,53
 ENTSCHÄRFE	2	lz:deu_news_2021_1M,wiki:de	2,8
 ERSATZBANK	2	lz:deu_news_2021_1M,lz:deu_news_2022_1M,lz:deu_news_2023_1M,lz:deu_news_2024_1M,lz:deu_newscrawl-public_2018_1M,lz:deu-at_web_2019_1M,wiki:de	13,19,14,13,7,2,3475
-ERSTECHE	2	gut,ia	5,2
+ERSTECHE	2	gut,ia	5,3
 FERNHÄLTST	2	ia,tat	3,2
 FETTARSCH	2	ia,wiki:de	2,6
 FICKTE	2	ia,wiki:de	27,1
-FORMWANDLER	2	ia,wiki:de	4,151
+FORMWANDLER	2	ia,wiki:de	5,151
 FRÜHLINGSROLLE	2	lz:deu_news_2022_1M,wiki:de	1,16
 GANGMITGLIED	2	lz:deu_news_2023_1M,wiki:de	1,118
 GASTSTAR	2	lz:deu_news_2021_1M,lz:deu_news_2022_1M,lz:deu_news_2024_1M,lz:deu_newscrawl-public_2018_1M,wiki:de	1,1,2,1,787
@@ -41,7 +41,7 @@ GEHIRNWELLEN	2	ia,wiki:de	16,48
 GLÜCKSKEKS	2	lz:deu_news_2022_1M,lz:deu_news_2023_1M,lz:deu_news_2024_1M,lz:deu_newscrawl-public_2018_1M,wiki:de	1,1,1,1,39
 HALLIHALLO	2	ia,wiki:de	1,5
 HAMMERMÄSSIG	2	lz:deu_news_2024_1M,wiki:de	1,8
-HERKAMST	2	gut,ia	7,3
+HERKAMST	2	gut,ia	7,4
 HINFÄHRST	2	gut,ia	4,3
 HINTERGEHST	2	gut,ia	5,3
 HÜA	2	ia,wiki:de	11,16
@@ -58,7 +58,7 @@ LUTSCHST	2	lz:deu-at_web_2019_1M,wiki:de,wikisource:de	1,1,1
 MANIPULIERST	2	tat,wiki:de	1,1
 MECKERST	2	gut,tat	3,2
 MORDERMITTLUNG	2	lz:deu_news_2022_1M,lz:deu_news_2023_1M,wiki:de	1,1,45
-MÖSEN	2	ia,wiki:de	11,25
+MÖSEN	2	ia,wiki:de	13,25
 NAGUT	2	ia,wiki:de	9,2
 PAPARAZZO	2	lz:deu_news_2023_1M,lz:deu_news_2024_1M,lz:deu_newscrawl-public_2018_1M,lz:deu-at_web_2019_1M,wiki:de	1,1,1,1,149
 PINKELST	2	ia,wiki:de	1,3
@@ -98,7 +98,7 @@ VERHANDELST	2	gut,wikisource:de	6,1
 VERHUNGERST	2	gut,wiki:de	4,1
 VERKRAFTE	2	lz:deu_news_2021_1M,lz:deu_news_2024_1M,wiki:de	1,1,6
 VERMASSELE	2	ia,tat	1,5
-VERMASSELST	2	ia,wiki:de	2,1
+VERMASSELST	2	ia,wiki:de	3,1
 VERMASSLE	2	ia,wiki:de	1,1
 VERPRÜGLE	2	gut,wiki:de	1,1
 VERSAUST	2	gut,tat	6,1
