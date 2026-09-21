@@ -76,8 +76,6 @@ export const SOURCES = [
   {
     id: 'tat',
     from: 'https://downloads.tatoeba.org/exports/per_language/deu/deu_sentences.tsv.bz2',
-    // The cached file is the unpacked .tsv, not the .bz2 above.
-    extracted: true,
     what: 'Tatoeba German — contemporary and conversational',
     needs: `${CACHE}deu_sentences.tsv`,
     documents: () => tatoebaDocuments(`${CACHE}deu_sentences.tsv`),
@@ -101,6 +99,40 @@ export const SOURCES = [
     what: 'Elberfelder 1905 — a translation, a family nothing else here belongs to',
     needs: `${CACHE}ebible-de`,
     documents: () => verseDocuments(`${CACHE}ebible-de/deuelo_vpl.txt`),
+  },
+  {
+    id: 'ia',
+    // Scanned books are OCR, and OCR fails in a way that looks like text. Clean Gutenberg scores
+    // a median 52% known words and never below 36%; the worst of these scored 1%, an English
+    // book read as Cyrillic. Below this floor a book is not legible enough to attest anything.
+    legible: 0.35,
+    what: 'Internet Archive german books — literature, and the register a newspaper never reaches',
+    needs: `${CACHE}archive-de`,
+    from: 'https://archive.org/details/booksbylanguage_german',
+    documents: () => {
+      const dir = `${CACHE}archive-de`
+      // A locator names the text, not the item: the catalogue page holds no word of the book.
+      // `files.tsv` maps an item to the file we read; a book with no recorded name is skipped
+      // rather than cited at a page that cannot support it.
+      const named = new Map(
+        readFileSync(`${dir}/files.tsv`, 'utf8')
+          .split('\n')
+          .filter(Boolean)
+          .map((line) => line.split('\t')),
+      )
+      const books = readdirSync(dir)
+        .filter((file) => file.endsWith('.txt'))
+        .map((file) => file.replace('.txt', ''))
+        .filter((id) => named.has(id))
+        // The filename is percent-encoded: two thirds of them contain spaces, and a locator with
+        // a space in it would split into two locators, because the evidence format spends spaces
+        // as separators. Encoding is also what the URL needs.
+        .map((id) => ({
+          locator: `${id}/${encodeURIComponent(named.get(id))}`,
+          path: `${dir}/${id}.txt`,
+        }))
+      return fileDocuments(books, async (path) => readFileSync(path, 'utf8'))
+    },
   },
 ].filter((source) => {
   if (existsSync(source.needs)) return true
