@@ -10,6 +10,11 @@ three independent sources.
 
 Candidates: 36,493. Shipped: 35,725.
 
+Of 5 families, **4 can be checked by fetching** —
+a stable identifier or a page we fetched ourselves. The other 1 are crawls
+somebody else made, whose locators record where they found the sentence; the document that holds
+it is their published corpus, not the web.
+
 | families | added | kept | coverage | gained |
 | --- | --- | --- | --- | --- |
 | 1 | `wikimedia` | 0 | 0.0% | — |
