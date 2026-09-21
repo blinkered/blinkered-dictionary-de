@@ -1,0 +1,11 @@
+{
+  "ships": true,
+  "decided": "2026-09-21",
+  "decidedBy": "operator",
+  "at": {
+    "words": 36329,
+    "candidates": 36493,
+    "coverage": 0.996
+  },
+  "why": "Blessed by the operator on 2026-09-21, in the first cut of seven."
+}
