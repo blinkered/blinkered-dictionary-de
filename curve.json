@@ -1,0 +1,45 @@
+{
+  "language": "de",
+  "built": "2026-09-21",
+  "candidates": 36493,
+  "shipped": 35725,
+  "families": 5,
+  "knee": 5,
+  "steps": [
+    {
+      "families": 1,
+      "added": "wikimedia",
+      "kept": 0,
+      "share": 0,
+      "gained": 0
+    },
+    {
+      "families": 2,
+      "added": "leipzig",
+      "kept": 0,
+      "share": 0,
+      "gained": 0
+    },
+    {
+      "families": 3,
+      "added": "gutenberg",
+      "kept": 33783,
+      "share": 0.925739,
+      "gained": 33783
+    },
+    {
+      "families": 4,
+      "added": "tatoeba",
+      "kept": 35709,
+      "share": 0.978516,
+      "gained": 1926
+    },
+    {
+      "families": 5,
+      "added": "ebible",
+      "kept": 35725,
+      "share": 0.978955,
+      "gained": 16
+    }
+  ]
+}
