@@ -1,4 +1,4 @@
-#blinkered/dropped/1 words=147
+#blinkered/dropped/1 words=144
 ABGEFUCKTE	2	lz:deu_news_2022_1M,lz:deu_news_2023_1M,wiki:de	1,1,1
 AKZEPTIER	2	ia,tat	9,1
 ANFÄNGERGLÜCK	2	tat,wiki:de	3,5
@@ -6,16 +6,15 @@ ANLÜGST	2	tat,wiki:de	3,1
 ANSPRICHST	2	gut,ia	1,17
 ANSTARRST	2	gut,ia	1,1
 ARSCHFICKER	2	ia,wiki:de	1,2
-AUSRASTER	2	lz:deu_news_2021_1M,lz:deu_news_2022_1M,lz:deu_news_2023_1M,lz:deu_news_2024_1M,lz:deu_newscrawl-public_2018_1M,wiki:de	6,15,10,13,3,66
 AUSZUFLIPPEN	2	tat,wiki:de	2,5
 BARKEEPERIN	2	lz:deu_news_2021_1M,lz:deu_news_2022_1M,lz:deu_news_2024_1M,lz:deu-at_web_2019_1M,wiki:de	1,1,2,1,179
 BEAME	2	ia,wiki:de	11,46
 BEDROHST	2	ia,wiki:de,wikisource:de	1,1,1
 BEKNACKTE	2	ia,wiki:de	1,30
 BEKNACKTEN	2	ia,wiki:de	2,4
-BIMSE	2	ia,wiki:de	1,5
+BIMSE	2	ia,wiki:de	2,5
 BLAMIERST	2	gut,tat	13,2
-BLUTLINIE	2	ia,wiki:de,wikisource:de	78,189,1
+BLUTLINIE	2	ia,wiki:de,wikisource:de	80,189,1
 BOXENSTOPP	2	lz:deu_news_2021_1M,lz:deu_news_2022_1M,lz:deu_news_2023_1M,lz:deu_news_2024_1M,lz:deu_newscrawl-public_2018_1M,lz:deu-at_web_2019_1M,wiki:de	15,14,13,21,4,3,1980
 CHEERLEADERIN	2	lz:deu_news_2022_1M,wiki:de	1,200
 COUGARS	2	lz:deu_news_2021_1M,lz:deu_news_2022_1M,lz:deu_news_2023_1M,lz:deu_newscrawl-public_2018_1M,wiki:de	2,1,1,6,1117
@@ -25,7 +24,7 @@ DREIDEL	2	gut,wiki:de	7,42
 DROGENTEST	2	lz:deu_news_2021_1M,lz:deu_news_2022_1M,lz:deu_news_2023_1M,lz:deu_news_2024_1M,lz:deu_newscrawl-public_2018_1M,wiki:de	15,12,10,14,2,98
 DURCHDREHE	2	lz:deu_news_2024_1M,wiki:de	1,1
 DURCHZIEHST	2	gut,ia	2,2
-DUSCHST	2	ia,tat	3,5
+DUSCHST	2	ia,tat	4,5
 EISENWARENLADEN	2	ia,wiki:de	2,53
 ENTSCHÄRFE	2	lz:deu_news_2021_1M,wiki:de	2,8
 ERSATZBANK	2	lz:deu_news_2021_1M,lz:deu_news_2022_1M,lz:deu_news_2023_1M,lz:deu_news_2024_1M,lz:deu_newscrawl-public_2018_1M,lz:deu-at_web_2019_1M,wiki:de	13,19,14,13,7,2,3475
@@ -38,14 +37,13 @@ FRÜHLINGSROLLE	2	lz:deu_news_2022_1M,wiki:de	1,16
 GANGMITGLIED	2	lz:deu_news_2023_1M,wiki:de	1,118
 GASTSTAR	2	lz:deu_news_2021_1M,lz:deu_news_2022_1M,lz:deu_news_2024_1M,lz:deu_newscrawl-public_2018_1M,wiki:de	1,1,2,1,787
 GEHIRNWELLEN	2	ia,wiki:de	16,48
-GLÜCKSKEKS	2	lz:deu_news_2022_1M,lz:deu_news_2023_1M,lz:deu_news_2024_1M,lz:deu_newscrawl-public_2018_1M,wiki:de	1,1,1,1,39
 HALLIHALLO	2	ia,wiki:de	1,5
 HAMMERMÄSSIG	2	lz:deu_news_2024_1M,wiki:de	1,8
 HERKAMST	2	gut,ia	7,4
 HINFÄHRST	2	gut,ia	4,3
 HINTERGEHST	2	gut,ia	5,3
 HÜA	2	ia,wiki:de	11,16
-IGNORIER	2	ia,tat	3,6
+IGNORIER	2	ia,tat	4,6
 INITIIERE	2	ia,wiki:de	1,16
 ITAKER	2	ia,wiki:de	1,7
 KALTGEMACHT	2	ia,wiki:de,wikisource:de	2,1,1
@@ -71,8 +69,8 @@ REINKOMME	2	gut,lz:deu_news_2021_1M,lz:deu_news_2024_1M	1,1,1
 REINZUPLATZEN	2	ia,wiki:de	1,1
 RISKIER	2	gut,wiki:de	2,20
 ROSTLAUBE	2	tat,wiki:de	2,53
-RUMGEHANGEN	2	ia,wiki:de	3,2
-SCHEISSKERLE	2	ia,wiki:de	2,8
+RUMGEHANGEN	2	ia,wiki:de	4,2
+SCHEISSKERLE	2	ia,wiki:de	3,8
 SCHEISSTYP	2	lz:deu_newscrawl-public_2018_1M,wiki:de	1,2
 SCHULKLINGEL	2	gut,wiki:de	6,5
 SCHUMMELST	2	gut,tat	1,2
@@ -82,8 +80,7 @@ SPAST	2	ia,wiki:de	1,13
 SPASTI	2	ia,wiki:de	10,9
 SPIONIERST	2	gut,tat	7,2
 STOCKBESOFFEN	2	tat,wiki:de	4,5
-TRANSE	2	lz:deu_news_2021_1M,lz:deu_news_2022_1M,lz:deu_news_2023_1M,lz:deu_newscrawl-public_2018_1M,wiki:de	1,1,1,2,54
-TRILLE	2	ia,wiki:de,wikisource:de	18,32,5
+TRILLE	2	ia,wiki:de,wikisource:de	20,32,5
 TSCHÜSSI	2	tat,wiki:de	1,10
 ÜBERPRÜFST	2	ia,wiki:de	1,1
 UMDREHST	2	gut,ia	1,2
@@ -111,7 +108,7 @@ ZURÜCKKAMST	2	gut,tat	6,1
 ZURÜCKRUFST	2	gut,ia	1,1
 ARSCHGEIGE	1	wiki:de	7
 BERUHIGST	1	gut	7
-BUMSE	1	ia	4
+BUMSE	1	ia	5
 DURCHDREHST	1	ia	1
 EINDÄMMUNGSFELD	1	wiki:de	16
 FLIPPST	1	ia	1
@@ -124,14 +121,14 @@ PENNST	1	ia	2
 RAUSFAND	1	wiki:de	1
 RAUSFINDE	1	ia	1
 RAUSFINDEST	1	ia	1
-REGELST	1	ia	3
+REGELST	1	ia	6
 REINGEPLATZT	1	wiki:de	1
 REINPLATZE	1	ia	3
 SACKGESICHT	1	wiki:de	1
 SCHÖNHEITSSCHLAF	1	lz:deu-at_web_2019_1M	1
 SCHRUBBE	1	wiki:de,wikisource:de	1,1
 SERVIERST	1	lz:deu_news_2021_1M	1
-STOPPST	1	ia	5
+STOPPST	1	ia	6
 ÜBERREAGIERST	1	tat	3
 VERABREDEST	1	gut	3
 VERFICKT	1	wiki:de	1

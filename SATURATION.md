@@ -8,7 +8,7 @@ the curve a careful builder would get, not the order this repository happens to 
 The first two families keep nothing, which is not padding — it is the shape of a rule that needs
 three independent sources.
 
-Candidates: 36,493. Shipped: 36,346.
+Candidates: 36,493. Shipped: 36,349.
 
 Of 21 families, **20 can be checked by fetching** —
 a stable identifier or a page we fetched ourselves. The other 1 are crawls
@@ -19,24 +19,24 @@ it is their published corpus, not the web.
 | --- | --- | --- | --- | --- |
 | 1 | `wikimedia` | 0 | 0.0% | — |
 | 2 | `internetarchive` | 0 | 0.0% | — |
-| 3 | `leipzig` | 35,688 | 97.8% | +35,688 |
-| 4 | `gutenberg` | 36,214 | 99.2% | +526 |
-| 5 | `tatoeba` | 36,341 | 99.6% | +127 |
-| 6 | `welt.de` | 36,343 | 99.6% | +2 |
-| 7 | `taz.de` | 36,344 | 99.6% | +1 |
-| 8 | `perlentaucher.de` | 36,345 | 99.6% | +1 |
-| 9 | `spiegel.de` | 36,346 | 99.6% | +1 |
-| 10 | `literaturkritik.de` | 36,346 | 99.6% | — |
-| 11 | `faz.net` | 36,346 | 99.6% | — |
-| 12 | `heise.de` | 36,346 | 99.6% | — |
-| 13 | `ebible` | 36,346 | 99.6% | — |
-| 14 | `br.de` | 36,346 | 99.6% | — |
-| 15 | `ndr.de` | 36,346 | 99.6% | — |
-| 16 | `n-tv.de` | 36,346 | 99.6% | — |
-| 17 | `projekt-gutenberg.org` | 36,346 | 99.6% | — |
-| 18 | `sueddeutsche.de` | 36,346 | 99.6% | — |
-| 19 | `deutschestextarchiv.de` | 36,346 | 99.6% | — |
-| 20 | `golem.de` | 36,346 | 99.6% | — |
-| 21 | `literaturport.de` | 36,346 | 99.6% | — |
+| 3 | `leipzig` | 35,701 | 97.8% | +35,701 |
+| 4 | `gutenberg` | 36,226 | 99.3% | +525 |
+| 5 | `tatoeba` | 36,345 | 99.6% | +119 |
+| 6 | `taz.de` | 36,346 | 99.6% | +1 |
+| 7 | `perlentaucher.de` | 36,347 | 99.6% | +1 |
+| 8 | `welt.de` | 36,348 | 99.6% | +1 |
+| 9 | `spiegel.de` | 36,349 | 99.6% | +1 |
+| 10 | `literaturkritik.de` | 36,349 | 99.6% | — |
+| 11 | `faz.net` | 36,349 | 99.6% | — |
+| 12 | `heise.de` | 36,349 | 99.6% | — |
+| 13 | `ebible` | 36,349 | 99.6% | — |
+| 14 | `br.de` | 36,349 | 99.6% | — |
+| 15 | `ndr.de` | 36,349 | 99.6% | — |
+| 16 | `n-tv.de` | 36,349 | 99.6% | — |
+| 17 | `projekt-gutenberg.org` | 36,349 | 99.6% | — |
+| 18 | `sueddeutsche.de` | 36,349 | 99.6% | — |
+| 19 | `deutschestextarchiv.de` | 36,349 | 99.6% | — |
+| 20 | `golem.de` | 36,349 | 99.6% | — |
+| 21 | `literaturport.de` | 36,349 | 99.6% | — |
 
-**Diminishing returns from family 4** (`gutenberg`, +526), where a family first added less than a twentieth of what the best one did.
+**Diminishing returns from family 4** (`gutenberg`, +525), where a family first added less than a twentieth of what the best one did.
